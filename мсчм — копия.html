@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+    background: url('3.jpg') no-repeat;
+    background-size: 100%  ;
+     /* Параметры фона */
+   }
+ 
+		.zomb{
+			position:absolute;
+			width: 100px;
+			height: 200px;
+			background-image: url("zombie 1.gif");
+			display: ;
+			transition: 1s;
+
+		}
+				 
+		
+		
+		.cherta{
+			width: 100px;
+			height: 100%;
+		    border-left: 5px solid green;
+		    position: absolute;
+		    left:1700px;
+		}
+		.win{
+			width: 1000px;
+			height: 150px;
+			background: #0f8291 ;
+			display: flex;
+			transition: 1s;
+			display: none;
+		}
+		.lose{
+			width: 1000px;
+			height: 150px;
+			background: #7d3939;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 250px;
+			display: none;
+		}
+		.schet{
+			width: 200px;
+			height: 100px;
+			background: blue;
+			position: absolute;
+			display: none;
+
+		}
+		.zagolovok{
+			width: 100%;
+			height: 20%;
+			background: ;
+		}	
+		.hello{width: 1000px;height: 150px;background: grey;display: flex;transition: 1s;}/*7cek*/
+		.cartinka{ width: 225px;height: 146px;border: 4px solid #75725f;transition: 1s}/*нужен чёрный(темноватый)*/
+		.chat{width: 775px;height: 146px;border: 4px solid #75725f;transition: 1s}
+		.chaste{color:#bfbfbf;}
+		.pox{transition: 1s}
+	</style>
+</head>
+<body>
+	<div class="hello_0">
+	 </div><!-- // На оборону!... //Слава яйцам ,что я был к этому готов к этому дерьму ешё с 2012 года// 
+	 Какаято чёрная хрень...Ты!!!Возьми палку,и продержись еще хотябы  15 секунды и я вытащю нас отсюда,а так же обещаю ,что не убью тебя раньше чем это сделают они!!! -->
+	<div class="hello">
+
+			<div class="cartinka"><img src="fff.jpg"  class="pox" style="width: 100%"></div>
+			<div class="chat">
+				<div class="chaste"><p style="margin-left: 5px;font-size:25px;line-height: 0 ">Какойто оруший мужик :</p></div>				
+				<div class="chaste"><h5 style="margin-left: 7px;font-family: cursive;font-size: 20px;">Какаято чёрная хрень...Ты!!!Возьми палку,и продержись еще хотябы  15 секунды и я вытащю нас отсюда,а так же обещаю ,что не убью тебя раньше чем это сделают они!!!</h5></div>				
+			</div>
+
+	</div>
+	<div class="win" style="">
+		<div class="cartinka"><img src="fff.jpg" style="width: 100%"></div>
+		<div class="chat">
+			<div><p style="margin-left: 5px;font-size: 25px;line-height: 0;" class="chaste">Какойто оруший мужик :</p></div>
+			<div><h5 style="margin-left: 7px;font-family: cursive;font-size: 20px;" class="chaste">Свалили...(отдышка)Сильно не радуйся , ты только приостановил неизбежное.</h5></div>
+		</div>
+	</div>
+
+	
+	
+		<!--Свалили...(отдышка)Сильно не радуйся , ты только приостановил неизбежное.  жмакни кнопку слево чтоб начать сразу.//необращай вниманияна пройгрышь-->
+	<div class="lose">
+		<div class="cartinka"><img src="fff.jpg" style="width: 100%"></div>
+		<div class="chat">
+			
+			<div><p style="margin-left: 5px;font-size: 25px;line-height: 0;color:#eff7eb;">Какойто оруший мужик :</p></div>
+			<div><h5 style="margin-left: 7px;font-family: cursive;font-size: 20px;" class="chaste">Поражение.Перезагрузи сайт ,и только попробуй НАЛОЖАЙ как сейчас.</h5></div>
+			<div><h5 style="margin-left: 7px;font-family: cursive;font-size: 20px;" class="chaste">А сейчас пришло время выполнять своё слово(Хруст кулаков)</h5></div>
+		</div>
+	</div><!--Поражение.Перезагрузи сайт ,и только попробуй НАЛОЖАЙ как сейчас./Пришло время выполнять своё слово(Хруст кулаков)/ жмакни кнопку слево чтоб начать сразу.-->
+	<div class="schet"></div>
+	<div class="cherta"></div>
+
+	<div class="zomb" style="left:1000px ;top:200px ;"></div><!--1-->
+	<div class="zomb" style="left:1300px ;top: ;"></div>     <!--2-->
+	<div class="zomb" style="left:500px ;top:700px ;"></div> <!--3-->
+	<div class="zomb" style="left:1200px ;top:450px ;"></div><!--4-->
+	<div class="zomb" style="left:200px ;top:620px ;"></div> <!--5-->
+	<div class="zomb" style="left:300px ;top:250px ;"></div> <!--6-->
+	<div class="zomb" style="left:550px ;top:400px ;"></div> <!--7-->
+	<div class="zomb" style="left:1000px ;top:666px ;"></div><!--8-->
+	<div class="zomb" style="left:1400px ;top:450px ;"></div><!--9-->
+	<div class="zomb" style="left: ;top:150px ;"></div>		 <!--10-->
+
+
+	<script type="text/javascript">
+		let hello= document.querySelector('.hello');
+		let lose = document.querySelector('.lose');
+		let win  = document.querySelector('.win');
+		let schet= document.querySelector('.schet');
+		let zomb = document.querySelectorAll('.zomb');// при нажатии он отбрасываеться назад
+		let cherta=document.querySelector('.cherta'); //2 click	
+		let btn  = document.querySelectorAll('.btn');	
+		let hello_0= document.querySelector('.hello_0');	
+
+        
+		
+        let zomb1=1000;let zomb3=500 ;let zomb5=200;let zomb7=700 ;let zomb9=1400;
+        let zomb2=1300;let zomb4=1200;let zomb6=300;let zomb8=1000;let zomb10=0  ;
+        //1
+        let zombie1=function() {
+        	zomb1=zomb1+125;
+        	zomb[0].style.left=zomb1+'px';
+     
+        	if (zomb1==1750){
+        		lose.style.display='block';
+        		cherta.style.borderLeft='none';
+        		lose.style.display='flex';
+        		setTimeout(function() { clearInterval(inter);},100);
+        	}
+        }       
+        zomb[0].onclick=function() {
+        	zomb1=zomb1-125;      	
+        }
+        //2
+		let zombie2=function() {
+			zomb2=zomb2+50;
+			zomb[1].style.left=zomb2+'px';
+			if (zomb2==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[1].onclick=function() {
+				zomb2=zomb2-50;
+			}
+		}
+		//3
+		let zombie3=function() {
+			zomb3=zomb3+25;
+			zomb[2].style.left=zomb3+'px';
+			if (zomb3==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[2].onclick=function() {
+				zomb3=zomb3-25;
+			}
+		}
+		//4
+		let zombie4=function() {
+			zomb4=zomb4+50;
+			zomb[3].style.left=zomb4+'px';
+			if (zomb4==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[3].onclick=function() {
+				zomb4=zomb4-50;
+			}
+		}
+		//5
+		let zombie5=function() {
+			zomb5=zomb5+25;
+			zomb[4].style.left=zomb5+'px';
+			if (zomb5==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[4].onclick=function() {
+				zomb5=zomb5-25;
+			}
+		}
+		//6
+		let zombie6=function() {
+			zomb6=zomb6+50;
+			zomb[5].style.left=zomb6+'px';
+			if (zomb6==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[5].onclick=function() {
+				zomb6=zomb6-50;
+			}
+		}
+		//7
+		let zombie7=function() {
+			zomb7=zomb7+50;
+			zomb[6].style.left=zomb7+'px';
+			if (zomb7==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[6].onclick=function() {
+				zomb7=zomb7-50;
+			}
+		}
+		//8
+		let zombie8=function() {
+			zomb8=zomb8+25;
+			zomb[7].style.left=zomb8+'px';
+			if (zomb8==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[7].onclick=function() {
+				zomb8=zomb8-25;
+			}
+		}
+		//9
+		let zombie9=function() {
+			zomb9=zomb9+125;
+			zomb[8].style.left=zomb9+'px';
+			if (zomb9==1775) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[8].onclick=function() {
+				zomb9=zomb9-125;
+			}
+		}
+		//10
+		let zombie10=function() {
+			zomb10=zomb10+125;
+			zomb[9].style.left=zomb10+'px';
+			if (zomb10==1700) {
+				lose.style.display='block';
+				cherta.style.borderLeft='none';
+				lose.style.display='flex';
+				setTimeout(function() { clearInterval(inter);},100);
+			}
+			zomb[9].onclick=function() {
+				zomb10=zomb10-125;
+			}
+		}        
+        let esc = function() {
+			zomb1=0; zomb2=0; zomb3=0; zomb4=0; zomb5=0; zomb6=0; zomb7=0; zomb8=0; zomb9=0; zomb10=0;
+			zomb1=zomb1+1; zomb2=zomb2+1; zomb3=zomb3+1; zomb4=zomb4+1; zomb5=zomb5+1; zomb6=zomb6+1; zomb7=zomb7+1; zomb8=zomb8+1; zomb9=zomb9+1; zomb10=zomb10+1;
+			for(let i=0;i<10;i=i+1){
+				zomb[i].style.display='none';
+			}
+			win.style.display='block';
+			lose.style.display='none';
+			cherta.style.display='none';
+			win.style.display='flex';
+		}	
+ 		//cnopki
+ 		let hide=function() {
+ 			
+ 			
+ 			chat.style.border='0px solid white';
+ 			cartinka.style.border='0px solid white';
+ 			pox.style.backgroundImage='none'
+ 		}
+ 		let privet=function() {
+ 			hello.style.display='none';
+ 		}
+	 
+	    setTimeout(hide,7000)  ;
+        setTimeout(privet,8000);
+	  let inter=setTimeout(esc,15000);//Победа
+       
+       	let muve_zomb_0=setInterval(zombie1,1000);
+		let muve_zomb_1=setInterval(zombie2,1000);
+		let muve_zomb_2=setInterval(zombie3,1000);
+		let muve_zomb_3=setInterval(zombie4,1000);
+		let muve_zomb_4=setInterval(zombie5,1000);
+	 	let muve_zomb_5=setInterval(zombie6,1000);
+		let muve_zomb_6=setInterval(zombie7,1000);
+		let muve_zomb_7=setInterval(zombie8,1000);
+		let muve_zomb_8=setInterval(zombie9,1000);
+		let muve_zomb_9=setInterval(zombie10,1000); 
+        
+
+		
+
+
+
+
+		
+	</script>
+</body>
+</html>
